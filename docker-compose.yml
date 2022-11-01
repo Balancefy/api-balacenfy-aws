@@ -1,5 +1,12 @@
 version: "3"
 services:
+  balancefy:
+    build: 
+      context: .
+    restart: always
+    ports:
+      - "8080:80"
+      
   balancefydb:
     image: postgres:10.5
     restart: always
