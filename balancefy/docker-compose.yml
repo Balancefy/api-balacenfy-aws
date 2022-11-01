@@ -1,0 +1,16 @@
+version: "3"
+services:
+  balancefydb:
+    image: postgres:10.5
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=balancefy
+    ports:
+      - "3307:5432"
+    volumes:
+      - db:/var/lib/mysql
+      - ./migration.sql:/docker-entrypoint-initdb.d/migration.sql
+volumes:
+  db:

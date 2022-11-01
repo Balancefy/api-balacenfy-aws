@@ -1,0 +1,181 @@
+# Created at 2022-10-20T00:03:57.628
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+# Created at 2022-10-20T00:04:38.765
+Unexpected IOException with stream: 2022-10-20 00:04:20.972  WARN 4676 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s161ms838µs508ns).
+
+
+# Created at 2022-10-20T00:05:39.264
+Unexpected IOException with stream: 2022-10-20 00:05:16.427  WARN 4676 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s85ms231µs976ns).
+
+
+# Created at 2022-10-20T00:05:44.584
+Unexpected IOException with stream: 2022-10-20 00:05:44.576  INFO 4676 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+
+
+# Created at 2022-10-20T00:05:45.311
+Unexpected IOException with stream: 2022-10-20 00:05:45.310  WARN 4676 --- [           main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+
+
+# Created at 2022-10-20T00:05:45.322
+Unexpected IOException with stream: 2022-10-20 00:05:45.322  INFO 4676 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**.html'] with []
+
+
+# Created at 2022-10-20T00:05:45.323
+Unexpected IOException with stream: 2022-10-20 00:05:45.323  WARN 4676 --- [           main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+
+
+# Created at 2022-10-20T00:05:45.323
+Unexpected IOException with stream: 2022-10-20 00:05:45.323  INFO 4676 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api-docs'] with []
+
+
+# Created at 2022-10-20T00:05:45.324
+Unexpected IOException with stream: 2022-10-20 00:05:45.323  WARN 4676 --- [           main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+
+
+# Created at 2022-10-20T00:05:45.324
+Unexpected IOException with stream: 2022-10-20 00:05:45.324  INFO 4676 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+
+
+# Created at 2022-10-20T00:05:45.324
+Unexpected IOException with stream: 2022-10-20 00:05:45.324  WARN 4676 --- [           main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+
+
+# Created at 2022-10-20T00:05:45.324
+Unexpected IOException with stream: 2022-10-20 00:05:45.324  INFO 4676 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/configuration/**'] with []
+
+
+# Created at 2022-10-20T00:05:45.325
+Unexpected IOException with stream: 2022-10-20 00:05:45.325  WARN 4676 --- [           main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+
+
+# Created at 2022-10-20T00:05:45.325
+Unexpected IOException with stream: 2022-10-20 00:05:45.325  INFO 4676 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+
+
+# Created at 2022-10-20T00:05:45.348
+Unexpected IOException with stream: 2022-10-20 00:05:45.325  WARN 4676 --- [           main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**.yml']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+
+
+# Created at 2022-10-20T00:05:45.350
+Unexpected IOException with stream: 2022-10-20 00:05:45.349  INFO 4676 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**.yml'] with []
+
+
+# Created at 2022-10-20T00:05:46.093
+Unexpected IOException with stream: 2022-10-20 00:05:46.093  INFO 4676 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+
+
+# Created at 2022-10-20T00:05:50.032
+Unexpected IOException with stream: 2022-10-20 00:05:50.028  INFO 4676 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+
+
+# Created at 2022-10-20T00:05:50.093
+Unexpected IOException with stream: 2022-10-20 00:05:50.084  INFO 4676 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+
+
+# Created at 2022-10-20T00:05:50.224
+Unexpected IOException with stream: 2022-10-20 00:05:50.223  INFO 4676 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+
+
+# Created at 2022-10-20T00:05:50.594
+Unexpected IOException with stream: 2022-10-20 00:05:50.593  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+
+
+# Created at 2022-10-20T00:05:50.629
+Unexpected IOException with stream: 2022-10-20 00:05:50.628  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByIdUsingGET_1
+
+
+# Created at 2022-10-20T00:05:50.685
+Unexpected IOException with stream: 2022-10-20 00:05:50.685  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_2
+
+
+# Created at 2022-10-20T00:05:50.731
+Unexpected IOException with stream: 2022-10-20 00:05:50.731  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_3
+
+
+# Created at 2022-10-20T00:05:50.762
+Unexpected IOException with stream: 2022-10-20 00:05:50.761  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+
+
+# Created at 2022-10-20T00:05:50.773
+Unexpected IOException with stream: 2022-10-20 00:05:50.772  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+
+
+# Created at 2022-10-20T00:05:50.782
+Unexpected IOException with stream: 2022-10-20 00:05:50.781  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_3
+
+
+# Created at 2022-10-20T00:05:50.840
+Unexpected IOException with stream: 2022-10-20 00:05:50.840  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_4
+
+
+# Created at 2022-10-20T00:05:50.842
+Unexpected IOException with stream: 2022-10-20 00:05:50.842  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+
+
+# Created at 2022-10-20T00:05:50.844
+Unexpected IOException with stream: 2022-10-20 00:05:50.844  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: exportCsvUsingGET_1
+
+
+# Created at 2022-10-20T00:05:50.906
+Unexpected IOException with stream: 2022-10-20 00:05:50.906  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_5
+
+
+# Created at 2022-10-20T00:05:50.908
+Unexpected IOException with stream: 2022-10-20 00:05:50.908  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_6
+
+
+# Created at 2022-10-20T00:05:50.913
+Unexpected IOException with stream: 2022-10-20 00:05:50.912  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+
+
+# Created at 2022-10-20T00:05:50.923
+Unexpected IOException with stream: 2022-10-20 00:05:50.923  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getListUsingGET_1
+
+
+# Created at 2022-10-20T00:05:50.952
+Unexpected IOException with stream: 2022-10-20 00:05:50.952  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_7
+
+
+# Created at 2022-10-20T00:05:50.958
+Unexpected IOException with stream: 2022-10-20 00:05:50.958  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_8
+
+
+# Created at 2022-10-20T00:05:50.982
+Unexpected IOException with stream: 2022-10-20 00:05:50.980  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByIdUsingGET_2
+
+
+# Created at 2022-10-20T00:05:50.984
+Unexpected IOException with stream: 2022-10-20 00:05:50.984  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getListUsingGET_2
+
+
+# Created at 2022-10-20T00:05:51.036
+Unexpected IOException with stream: 2022-10-20 00:05:51.032  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_9
+
+
+# Created at 2022-10-20T00:05:51.042
+Unexpected IOException with stream: 2022-10-20 00:05:51.041  INFO 4676 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+
+
+# Created at 2022-10-20T00:05:51.115
+Unexpected IOException with stream: 2022-10-20 00:05:51.115  INFO 4676 --- [           main] b.a.domain.services.UsuarioServiceTest   : Started UsuarioServiceTest in 362.439 seconds (JVM running for 364.736)
+
+
+# Created at 2022-10-20T00:05:51.151
+Unexpected IOException with stream: 2022-10-20 00:05:51.151  INFO 4676 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2022-10-20T00:05:51.159
+Unexpected IOException with stream: 2022-10-20 00:05:51.158  INFO 4676 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+
+
+# Created at 2022-10-20T00:05:51.175
+Unexpected IOException with stream: 2022-10-20 00:05:51.175  INFO 4676 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+
