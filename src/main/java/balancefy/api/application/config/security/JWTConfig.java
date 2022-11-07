@@ -75,7 +75,7 @@ public class JWTConfig extends WebSecurityConfigurerAdapter {
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         final CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000/", "https://balancefy.ddns.net", "*"));
+        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000/", "http://lb-frontend-nginx", "http://frontend1", "http://frontend2", "https://lb-frontend-nginx", "https://frontend1", "https://frontend2", "*"));
                 configuration.setAllowedMethods(Arrays.asList("HEAD", "GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         configuration.setAllowCredentials(true);
         configuration.setAllowedHeaders(Arrays.asList("*"));
