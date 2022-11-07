@@ -16,7 +16,7 @@ import org.springframework.web.client.HttpServerErrorException;
 
 import java.util.List;
 @RestController
-@RequestMapping("/comentario")
+@RequestMapping("/api/comentario")
 public class ComentarioController {
 
     @Autowired

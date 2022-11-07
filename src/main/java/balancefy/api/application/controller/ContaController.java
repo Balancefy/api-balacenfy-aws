@@ -15,7 +15,7 @@ import org.springframework.web.client.HttpServerErrorException;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/accounts")
+@RequestMapping("/api/accounts")
 public class ContaController {
     @Autowired
     private ContaService contaService;

@@ -18,7 +18,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @RestController
-@RequestMapping("/dicas")
+@RequestMapping("/api/dicas")
 public class DicaController {
     @Autowired
     private DicaService dicaService;

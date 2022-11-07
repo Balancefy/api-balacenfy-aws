@@ -28,7 +28,6 @@ import java.util.List;
 @EnableSwagger2
 public class SwaggerConfig {
 
-
     private ApiKey apiKey() {
         return new ApiKey("JWT", "Authorization", "header");
     }

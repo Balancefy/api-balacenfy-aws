@@ -22,7 +22,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 @RestController
-@RequestMapping("/transactions")
+@RequestMapping("/api/transactions")
 public class MovimentacaoController {
     @Autowired
     private MovimentacaoService movimentacaoService;

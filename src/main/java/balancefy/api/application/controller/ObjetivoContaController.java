@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.zip.DataFormatException;
 
 @RestController
-@RequestMapping("/accounts/goals")
+@RequestMapping("/api/accounts/goals")
 public class ObjetivoContaController {
 
     @Autowired

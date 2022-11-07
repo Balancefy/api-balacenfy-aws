@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 @RestController
-@RequestMapping("/transactionFixed")
+@RequestMapping("/api/transactionFixed")
 public class MovimentacaoFixaController {
 
     @Autowired

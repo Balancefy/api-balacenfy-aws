@@ -22,7 +22,7 @@ import javax.validation.Valid;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api/users")
 public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
