@@ -5,6 +5,7 @@ pipeline {
         stage('Build docker image') {
             steps {
                 echo 'building docker image...'
+                sh "docker info"
             }
         }
         stage('Push to registry') {
