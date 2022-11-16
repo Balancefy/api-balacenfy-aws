@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Stress test') {
             steps {
-                echo 'AAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                echo 'AAAAAAAAAAAAAAAAAAAAAAAAA'
             }
         }
     }
