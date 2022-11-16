@@ -1,16 +1,34 @@
 pipeline {
+    environment {
+        registry = "bvediner/balancefy-backend"
+        registryCredential = 'dockerhub'
+        dockerImage = ''
+    }
+
     agent any
 
     stages {
         stage('Build docker image') {
             steps {
                 echo 'building docker image...'
-                sh "docker info"
+                script {
+                    dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                }
             }
         }
-        stage('Push to registry') {
+        stage('Deploy docker image') {
             steps {
-                echo 'pushing to registry...'
+                echo 'deploying docker image...'
+                script {
+                    docker.withRegistry( '', registryCredential) {
+                        dockerImage.push()
+                    }
+                }
+            }
+        }
+        stage('Remove Unused docker image') {
+            steps{
+                sh "docker rmi $registry:$BUILD_NUMBER"
             }
         }
         stage('Deploy docker container in EC2 Instance') {
