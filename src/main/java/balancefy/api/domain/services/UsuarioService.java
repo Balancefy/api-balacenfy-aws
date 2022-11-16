@@ -16,6 +16,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -68,14 +69,11 @@ public class UsuarioService {
     public void updateAvatar(MultipartFile multipartFile, Integer id) throws IOException, NotFoundException {
         try {
             if (usuarioRepository.existsById(id)) {
-                String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
+                String fileName = id+"avatar/"+StringUtils.cleanPath(Objects.requireNonNull(multipartFile.getOriginalFilename()));
 
                 usuarioRepository.updateAvatar(fileName, id);
 
-                String uploadDir = "user-photos/" + id + "/avatar";
-
-                FileUploadUtil.saveFile(uploadDir, fileName, multipartFile);
-
+                FileUploadUtil.saveFile(fileName, multipartFile);
                 return;
             }
 
@@ -88,13 +86,11 @@ public class UsuarioService {
     public void updateBanner(MultipartFile multipartFile, Integer id) throws IOException, NotFoundException {
         try {
             if (usuarioRepository.existsById(id)) {
-                String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
+                String fileName = id+"banner/"+StringUtils.cleanPath(Objects.requireNonNull(multipartFile.getOriginalFilename()));
 
                 usuarioRepository.updateBanner(fileName, id);
 
-                String uploadDir = "user-photos/" + id + "/banner";
-
-                FileUploadUtil.saveFile(uploadDir, fileName, multipartFile);
+                FileUploadUtil.saveFile(fileName, multipartFile);
 
                 return;
             }

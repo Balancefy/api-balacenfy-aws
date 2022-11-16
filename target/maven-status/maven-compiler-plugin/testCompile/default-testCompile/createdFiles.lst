@@ -1,0 +1,3 @@
+balancefy\api\ApiApplicationTests.class
+balancefy\api\domain\services\ContaServiceTest.class
+balancefy\api\domain\services\UsuarioServiceTest.class
