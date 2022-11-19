@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Remove Unused docker image') {
             steps{
-                sh "docker rmi $(docker images -q)"
+                sh "docker rmi \$(docker images -q)"
             }
         }
         stage('Deploy docker container in EC2 Instance') {
