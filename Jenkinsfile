@@ -34,7 +34,7 @@ pipeline {
         stage('Deploy docker container in EC2 Instance') {
             steps {
                 dir('/infra/backend') {
-                    sh "BACKEND_IMAGE_VERSION=" registry + ":$BUILD_NUMBER docker-compose up -d"
+                    sh "BACKEND_IMAGE_VERSION=$registry:$BUILD_NUMBER docker-compose up -d"
                 }
             }
         }
