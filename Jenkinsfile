@@ -28,17 +28,14 @@ pipeline {
         }
         stage('Remove Unused docker image') {
             steps{
-                sh "docker rmi $registry:$BUILD_NUMBER"
+                sh "docker rmi $(docker images -q)"
             }
         }
         stage('Deploy docker container in EC2 Instance') {
             steps {
-                echo 'deploying...'
-            }
-        }
-        stage('Stress test') {
-            steps {
-                echo 'AAAAAAAAAAAAAAAAAAAAAAA'
+                dir('/infra/backend') {
+                    sh "BACKEND_IMAGE_VERSION=" registry + ":$BUILD_NUMBER docker-compose up -d"
+                }
             }
         }
     }
