@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bd8e425-859a-42b2-a013-719c64c8e618" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/balancefy/api/resources/configs/AwsCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/balancefy/api/application/utils/FileUploadUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/balancefy/api/application/utils/FileUploadUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/balancefy/api/domain/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/balancefy/api/domain/services/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="9bd8e425-859a-42b2-a013-719c64c8e618" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
