@@ -25,6 +25,9 @@ public class UsuarioService {
     private UsuarioRepository usuarioRepository;
 
     @Autowired
+    private FileUploadUtil fileUploadUtil;
+
+    @Autowired
     private ContaRepository contaRepository;
 
     public Usuario create(Usuario usuario) throws AlreadyExistsException {
@@ -73,7 +76,7 @@ public class UsuarioService {
 
                 usuarioRepository.updateAvatar(fileName, id);
 
-                FileUploadUtil.saveFile(fileName, multipartFile);
+                fileUploadUtil.saveFile(fileName, multipartFile);
                 return;
             }
 
@@ -90,7 +93,7 @@ public class UsuarioService {
 
                 usuarioRepository.updateBanner(fileName, id);
 
-                FileUploadUtil.saveFile(fileName, multipartFile);
+                fileUploadUtil.saveFile(fileName, multipartFile);
 
                 return;
             }
