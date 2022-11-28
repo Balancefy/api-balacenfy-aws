@@ -39,6 +39,8 @@ public class CorsConfiguration extends org.springframework.web.cors.CorsConfigur
                         "http://localhost:3000",
                         "https://balancefy.ddns.net",
                         "http://balancefy.ddns.net",
+                        "https://api-balancefy.ddns.net",
+                        "http://api-balancefy.ddns.net",
                         "http://lb-frontend-nginx",
                         "https://lb-frontend-nginx",
                         "http://frontend1",
