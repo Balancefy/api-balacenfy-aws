@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 @Configuration
-public class CorsConfiguration extends WebMvcConfigurer {
+public class CorsConfiguration implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
