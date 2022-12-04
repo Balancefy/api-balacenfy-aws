@@ -26,7 +26,7 @@ pipeline {
                 }
             }
         }
-        stage('Deploy docker container in EC2') {
+        stage('Deploy docker container in EC2 instance') {
             steps {
                 sh "cd /infra/backend && BACKEND_IMAGE_VERSION=$registry:$BUILD_NUMBER docker compose up --build -d"
             }
