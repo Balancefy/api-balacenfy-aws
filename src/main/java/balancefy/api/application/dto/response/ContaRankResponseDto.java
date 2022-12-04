@@ -5,6 +5,7 @@ import balancefy.api.resources.entities.Conta;
 public class ContaRankResponseDto {
     private Integer id;
     private String nome;
+    private String avatar;
     private Double progresso;
     private Integer objetivo;
 
@@ -13,6 +14,7 @@ public class ContaRankResponseDto {
         this.nome = conta.getFkUsuario().getNome();
         this.progresso = conta.getProgresso();
         this.objetivo = objetivosConcluido;
+        this.avatar = conta.getFkUsuario().getAvatar();
     }
 
     public Integer getId() {
@@ -47,4 +49,11 @@ public class ContaRankResponseDto {
         this.objetivo = objetivo;
     }
 
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
 }
