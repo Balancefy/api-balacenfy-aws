@@ -135,7 +135,7 @@ public class Usuario {
     public String getAvatar() {
 
         if (avatar.endsWith(".png") || avatar.endsWith(".jpeg") || avatar.endsWith(".jpg")) {
-            return "/user-photos/" + id + "/avatar/" + avatar;
+            return "https://balancefy-d.s3.amazonaws.com/" + avatar;
         }
 
         return avatar;
@@ -147,7 +147,7 @@ public class Usuario {
 
     public String getBanner() {
         if (banner.endsWith(".png") || banner.endsWith(".jpeg") || banner.endsWith(".jpg")) {
-            return "/user-photos/" + id + "/banner/" + banner;
+            return "https://balancefy-d.s3.amazonaws.com/" + banner;
         }
 
         return banner;
