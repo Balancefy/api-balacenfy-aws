@@ -61,15 +61,15 @@ public class UsuarioController {
 
     @PutMapping("/upload/avatar")
     public ResponseEntity updateAvatar(
-            @RequestParam("image")MultipartFile multipartFile,
+            @RequestParam("image") MultipartFile multipartFile,
             @RequestHeader(value = "Authorization") String token
     ) {
         try {
             int id = tokenService.getIdUsuario(token.replace("Bearer ", ""));
 
-            usuarioService.updateAvatar(multipartFile, id);
+            String fileName = usuarioService.updateAvatar(multipartFile, id);
 
-            return ResponseEntity.ok("Upload Ok");
+            return ResponseEntity.ok(fileName);
         } catch (NotFoundException ex) {
             return ResponseEntity.status(404).body(ex.getMessage());
         } catch (IOException ex) {
@@ -82,7 +82,7 @@ public class UsuarioController {
 
     @PutMapping("/upload/banner")
     public ResponseEntity updateBanner(
-            @RequestParam("image")MultipartFile multipartFile,
+            @RequestParam("image") MultipartFile multipartFile,
             @RequestHeader(value = "Authorization") String token
     ) {
         try {
@@ -103,10 +103,10 @@ public class UsuarioController {
     @CrossOrigin
     @PutMapping("/senha")
     public ResponseEntity updatePassword(@RequestBody UsuarioSenhaRequestDto request,
-                                              @RequestHeader(value = "Authorization") String token) {
+                                         @RequestHeader(value = "Authorization") String token) {
         try {
             int id = tokenService.getIdUsuario(token.replace("Bearer ", ""));
-            usuarioService.updatePassword(id,request);
+            usuarioService.updatePassword(id, request);
             return ResponseEntity.status(200).build();
         } catch (HttpServerErrorException.InternalServerError ex) {
             return ResponseEntity.status(500).build();

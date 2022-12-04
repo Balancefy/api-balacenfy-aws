@@ -69,7 +69,7 @@ public class UsuarioService {
         }
     }
 
-    public void updateAvatar(MultipartFile multipartFile, Integer id) throws IOException, NotFoundException {
+    public String  updateAvatar(MultipartFile multipartFile, Integer id) throws IOException, NotFoundException {
         try {
             if (usuarioRepository.existsById(id)) {
                 String fileName = id+"avatar/"+StringUtils.cleanPath(Objects.requireNonNull(multipartFile.getOriginalFilename()));
@@ -77,7 +77,7 @@ public class UsuarioService {
                 usuarioRepository.updateAvatar(fileName, id);
 
                 fileUploadUtil.saveFile(fileName, multipartFile);
-                return;
+                return "https://balancefy-d.s3.amazonaws.com/"+fileName;
             }
 
             throw new NotFoundException("Usuário não encontrado");
