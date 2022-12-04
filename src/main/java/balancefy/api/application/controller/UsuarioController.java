@@ -60,7 +60,7 @@ public class UsuarioController {
     }
 
     @PutMapping("/upload/avatar")
-    public ResponseEntity updateAvatar(
+    public ResponseEntity<String> updateAvatar(
             @RequestParam("image") MultipartFile multipartFile,
             @RequestHeader(value = "Authorization") String token
     ) {
