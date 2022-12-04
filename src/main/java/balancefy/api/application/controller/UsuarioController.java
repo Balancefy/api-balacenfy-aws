@@ -4,6 +4,7 @@ import balancefy.api.application.config.security.TokenService;
 import balancefy.api.application.dto.request.UsuarioEditRequest;
 import balancefy.api.application.dto.request.UsuarioRequest;
 import balancefy.api.application.dto.request.UsuarioSenhaRequestDto;
+import balancefy.api.application.dto.response.UploadResponseDto;
 import balancefy.api.domain.exceptions.AlreadyExistsException;
 import balancefy.api.domain.exceptions.NotFoundException;
 import balancefy.api.application.dto.response.ListaUsuarioResponseDto;
@@ -60,7 +61,7 @@ public class UsuarioController {
     }
 
     @PutMapping("/upload/avatar")
-    public ResponseEntity<String> updateAvatar(
+    public ResponseEntity<UploadResponseDto> updateAvatar(
             @RequestParam("image") MultipartFile multipartFile,
             @RequestHeader(value = "Authorization") String token
     ) {
@@ -69,13 +70,13 @@ public class UsuarioController {
 
             String fileName = usuarioService.updateAvatar(multipartFile, id);
 
-            return ResponseEntity.ok(fileName);
+            return ResponseEntity.ok(new UploadResponseDto(fileName));
         } catch (NotFoundException ex) {
-            return ResponseEntity.status(404).body(ex.getMessage());
+            return ResponseEntity.status(404).body(new UploadResponseDto(ex.getMessage()));
         } catch (IOException ex) {
-            return ResponseEntity.status(500).body(ex.getMessage());
+            return ResponseEntity.status(500).body(new UploadResponseDto(ex.getMessage()));
         } catch (Exception ex) {
-            return ResponseEntity.status(400).body(ex.getMessage());
+            return ResponseEntity.status(400).body(new UploadResponseDto(ex.getMessage()));
         }
 
     }
